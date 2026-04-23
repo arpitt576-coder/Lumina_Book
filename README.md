@@ -2,19 +2,28 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# Lumina Book
 
-This contains everything you need to run your app locally.
+This project contains everything required to run the application locally.
 
-View your app in AI Studio: https://ai.studio/apps/86a6efbc-086e-4dfc-8ada-599600c60126
+GitHub Repository: https://github.com/arpitt576-coder/Lumina_Book
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
+Make sure Node.js is installed on your system.
 
+### Installation
 
-1. Install dependencies:
+1. Clone the repository or download the project files.
+
+2. Install dependencies using:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+
+3. Create a `.env.local` file in the root folder and add your Gemini API key:
+   `GEMINI_API_KEY=your_api_key_here`
+
+4. Start the development server:
    `npm run dev`
+
+The application will run locally in your browser after the server starts.
