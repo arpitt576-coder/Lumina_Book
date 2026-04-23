@@ -1,0 +1,6 @@
+{
+  "name": "Lumina Books",
+  "description": "A sophisticated online bookstore featuring book search, category filtering, detailed book pages, and a secure admin dashboard for inventory management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

@@ -1,0 +1,41 @@
+{
+  "entities": {
+    "Book": {
+      "title": "Book",
+      "description": "Information about a book in the store",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "description": "The title of the book" },
+        "author": { "type": "string", "description": "The author of the book" },
+        "price": { "type": "number", "description": "The price of the book" },
+        "category": { "type": "string", "description": "The category/genre of the book" },
+        "description": { "type": "string", "description": "A brief summary of the book" },
+        "coverUrl": { "type": "string", "description": "URL to the book cover image" },
+        "stock": { "type": "number", "description": "Number of items in stock" },
+        "featured": { "type": "boolean", "description": "Whether the book is featured on the home page" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp" }
+      },
+      "required": ["title", "author", "price", "category"]
+    },
+    "Category": {
+      "title": "Category",
+      "description": "A book category or genre",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Name of the category" },
+        "slug": { "type": "string", "description": "URL-friendly version of the name" }
+      },
+      "required": ["name", "slug"]
+    }
+  },
+  "firestore": {
+    "/books/{bookId}": {
+      "schema": "Book",
+      "description": "Collection of all books in the store"
+    },
+    "/categories/{categoryId}": {
+      "schema": "Category",
+      "description": "Collection of book categories"
+    }
+  }
+}
